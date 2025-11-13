@@ -1,0 +1,17 @@
+
+if SHIELD_TRACKTYL_DONGLE
+
+config ZMK_KEYBOARD_NAME
+	default "Tracktyl"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+	default y
+
+endif
+
+if SHIELD_TRACKTYL_DONGLE || SHIELD_TRACKTYL_LEFT || SHIELD_TRACKTYL_RIGHT
+
+config ZMK_SPLIT
+	default y
+	
+endif
